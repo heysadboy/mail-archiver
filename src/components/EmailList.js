@@ -1,5 +1,6 @@
 import React from 'react';
 import EmailItem from './EmailItem';
+import AttatchmentIcon from '../assets/icons/AttatchmentIcon';
 
 const EmailList = ({ emails }) => {
 
@@ -10,13 +11,13 @@ const EmailList = ({ emails }) => {
     });
 
     return (
-        <table className="ui sortable celled table">
+        <table className="ui fixed table">
             <thead>
                 <tr>
-                    <th>From</th>
-                    <th>To</th>
-                    <th>Subject</th>
-                    <th className="sorted descending">Date</th>
+                    <th className="three wide">From</th>
+                    <th className="three wide">To</th>
+                    <th className="eight wide">Subject</th>
+                    <th className="two wide">Date</th>
                 </tr>
             </thead>
             <tbody>

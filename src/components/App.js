@@ -12,7 +12,7 @@ const App = () => {
     }, []);
 
     return (
-        <div className="ui main text container">
+        <div className="ui container">
             <SearchBar />
             <h3 className="ui grey header">Result: {emailSize} mail(s)</h3>
             {emailSize > 0

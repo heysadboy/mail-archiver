@@ -2,35 +2,43 @@
     "emails": [
         {
             "id": 1,
-            "from": "test",
-            "to": "test",
+            "from": "test@test.test",
+            "to": "test@test.test",
+            "cc": null,
             "subject": "test",
             "body": "test",
             "attatchment": "test",
-            "date": "test"
+            "date": "2021/02/01"
         },
         {
             "id": 2,
             "from": "test",
             "to": "test",
+            "cc": null,
             "subject": "test",
             "body": "test",
-            "attatchment": "test",
+            "attatchment": null,
             "date": "test"
         },
         {
             "id": 3,
             "from": "test",
-            "to": "test",
+            "to": "test@test.testtttttttttttttttttttttttttttttttttttttttttttttt",
+            "cc": [
+                "test@test.test"
+            ],
             "subject": "test",
             "body": "test",
-            "attatchment": "test",
+            "attatchment": null,
             "date": "test"
         },
         {
             "id": 4,
             "from": "test",
             "to": "test",
+            "cc": [
+                "test@test.test"
+            ],
             "subject": "test",
             "body": "test",
             "attatchment": "test",
@@ -40,33 +48,40 @@
             "id": 5,
             "from": "test",
             "to": "test",
+            "cc": [
+                "test@test.test",
+                "test@test.test"
+            ],
             "subject": "test",
             "body": "test",
-            "attatchment": "test",
+            "attatchment": null,
             "date": "test"
         },
         {
             "id": 6,
             "from": "test",
             "to": "test",
+            "cc": null,
             "subject": "test",
             "body": "test",
-            "attatchment": "test",
+            "attatchment": null,
             "date": "test"
         },
         {
             "id": 7,
             "from": "test",
             "to": "test",
+            "cc": null,
             "subject": "test",
             "body": "test",
-            "attatchment": "test",
+            "attatchment": null,
             "date": "test"
         },
         {
             "id": 8,
             "from": "test",
             "to": "test",
+            "cc": null,
             "subject": "test",
             "body": "test",
             "attatchment": "test",
@@ -76,6 +91,7 @@
             "id": 9,
             "from": "test",
             "to": "test",
+            "cc": null,
             "subject": "test",
             "body": "test",
             "attatchment": "test",
@@ -85,18 +101,10 @@
             "id": 10,
             "from": "test",
             "to": "test",
+            "cc": null,
             "subject": "test",
             "body": "test",
-            "attatchment": "test",
-            "date": "test"
-        },
-        {
-            "id": 11,
-            "from": "test",
-            "to": "test",
-            "subject": "test",
-            "body": "test",
-            "attatchment": "test",
+            "attatchment": null,
             "date": "test"
         }
     ]
