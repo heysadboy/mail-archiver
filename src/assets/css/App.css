@@ -2,3 +2,15 @@
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
+.ui.divider {
+    padding-bottom: 25%;
+}
+
+.logo-image {
+    max-height: 400px;
+    max-width: 400px;
+    display:block;
+    margin: auto;
+}
+

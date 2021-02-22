@@ -9,6 +9,10 @@
     color: black;
 }
 
+.cc-label {
+    float: right;
+}
+
 .email-cell-row:hover svg path,
 .email-cell-row:hover {
     cursor: pointer;

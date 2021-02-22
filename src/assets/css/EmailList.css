@@ -6,6 +6,19 @@
     color: black;
 }
 
-.up-icon {
+.up-icon-hidden {
     visibility: hidden;
+    margin-left: 10px;
+    display: inline-block;
 }
+
+.up-icon-visible {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+    .ui.table thead {
+      background: #f9fafb;
+    }
+  }
