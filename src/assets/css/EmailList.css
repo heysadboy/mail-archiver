@@ -1,0 +1,11 @@
+.ui.table thead th:hover svg path,
+.ui.table thead th:hover {
+    cursor: pointer;
+    fill: black;
+    font-weight: bold;
+    color: black;
+}
+
+.up-icon {
+    visibility: hidden;
+}

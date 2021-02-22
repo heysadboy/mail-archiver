@@ -6,6 +6,7 @@ import '../assets/css/App.css';
 
 const App = () => {
     const [emailSize, setEmailSize] = useState(0);
+    const [searchDate, setSearchDate] = useState("2020/1/1 - 2021/8/9");
 
     useEffect(() => {
         setEmailSize(EmailData.emails.length);
@@ -13,10 +14,10 @@ const App = () => {
 
     return (
         <div className="ui container">
-            <SearchBar />
-            <h3 className="ui grey header">Result: {emailSize} mail(s)</h3>
+            <SearchBar searchDate={searchDate} setSearchDate={setSearchDate} />
+            <h3 className="ui grey header">Results: {emailSize} mail(s)</h3>
             {emailSize > 0
-                ? <div><EmailList emails={EmailData.emails} /></div>
+                ? <div><EmailList emails={EmailData.emails} searchDate={searchDate} /></div>
                 : <div className="ui divider"></div>
             }
         </div>

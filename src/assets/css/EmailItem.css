@@ -1,7 +1,18 @@
-.ui.label {
-    float: right;
+.email-cell-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
-.attachment {
-    float: right;
+.sort-selected {
+    font-weight: bold;
+    color: black;
+}
+
+.email-cell-row:hover svg path,
+.email-cell-row:hover {
+    cursor: pointer;
+    color: #0000d6;
+    background: #fafaff;
+    fill: #0000d6;
 }

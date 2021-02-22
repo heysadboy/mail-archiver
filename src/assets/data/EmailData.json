@@ -2,110 +2,110 @@
     "emails": [
         {
             "id": 1,
-            "from": "test@test.test",
-            "to": "test@test.test",
+            "from": "fukushima@earthquake.com",
+            "to": "tokyo@city.co.jp",
             "cc": null,
-            "subject": "test",
-            "body": "test",
-            "attatchment": "test",
-            "date": "2021/02/01"
+            "subject": "Eartquake Information",
+            "body": "This earthquake was very strong, please take care.",
+            "attatchment": null,
+            "date": "2021/02/22 12:30:00"
         },
         {
             "id": 2,
-            "from": "test",
-            "to": "test",
+            "from": "kitana@mortal.com",
+            "to": "mileena@mortal.com",
             "cc": null,
-            "subject": "test",
-            "body": "test",
+            "subject": "Match timings for tournament",
+            "body": "It is going to be tough competition.",
             "attatchment": null,
-            "date": "test"
+            "date": "2021/02/15 05:45:00"
         },
         {
             "id": 3,
-            "from": "test",
-            "to": "test@test.testtttttttttttttttttttttttttttttttttttttttttttttt",
+            "from": "suginami@tokyo.co.jp",
+            "to": "chiyoda@tokyo.co.jp",
             "cc": [
-                "test@test.test"
+                "nakano@tokyo.co.jp"
             ],
-            "subject": "test",
-            "body": "test",
+            "subject": "[Seasonal Wishes] Happy Valentine's Day",
+            "body": "This is Valentine's Day Wish",
             "attatchment": null,
-            "date": "test"
+            "date": "2021/02/14 06:30:00"
         },
         {
             "id": 4,
-            "from": "test",
-            "to": "test",
+            "from": "company@tokyo.co.jp",
+            "to": "everyone@tokyo.co.jp",
             "cc": [
-                "test@test.test"
+                "manager@tokyo.co.jp"
             ],
-            "subject": "test",
-            "body": "test",
+            "subject": "Increment notice for this year",
+            "body": "Your salary has been increased by 200%.",
             "attatchment": "test",
-            "date": "test"
+            "date": "2021/01/28 18:09:00"
         },
         {
             "id": 5,
-            "from": "test",
-            "to": "test",
+            "from": "hr@tokyo.co.jp",
+            "to": "team@tokyo.co.jp",
             "cc": [
-                "test@test.test",
-                "test@test.test"
+                "everyone@osaka.co.jp",
+                "everyone@fukuoka.co.jp"
             ],
-            "subject": "test",
-            "body": "test",
+            "subject": "Happy New Year Wishes",
+            "body": "Welcome back to the company! Hope you enjoy.",
             "attatchment": null,
-            "date": "test"
+            "date": "2021/01/08 14:01:00"
         },
         {
             "id": 6,
-            "from": "test",
-            "to": "test",
+            "from": "sales@tokyo.co.jp",
+            "to": "business@tokyo.co.jp",
             "cc": null,
-            "subject": "test",
-            "body": "test",
+            "subject": "[New Employee Notice] Notification for new joiners",
+            "body": "Please welcome new employees in the company. Everyone is so cute.",
             "attatchment": null,
-            "date": "test"
+            "date": "2020/12/27 11:09:00"
         },
         {
             "id": 7,
-            "from": "test",
-            "to": "test",
+            "from": "company@tokyo.co.jp",
+            "to": "development@akita.co.jp",
             "cc": null,
-            "subject": "test",
-            "body": "test",
+            "subject": "New Party contest",
+            "body": "This contest will test who can drink more highball.",
             "attatchment": null,
-            "date": "test"
+            "date": "2020/12/16 01:19:00"
         },
         {
             "id": 8,
-            "from": "test",
-            "to": "test",
+            "from": "oita@beppu.co.jp",
+            "to": "tokyo@shinjuku.com",
             "cc": null,
-            "subject": "test",
-            "body": "test",
+            "subject": "[Spa Offer] Free spa offer for new employees",
+            "body": "Enjot the new spa. It is very relaxing.",
             "attatchment": "test",
-            "date": "test"
+            "date": "2020/11/18 17:00:01"
         },
         {
             "id": 9,
-            "from": "test",
-            "to": "test",
+            "from": "company@tokyo.co.jp",
+            "to": "you@tokyo.co.jp",
             "cc": null,
-            "subject": "test",
-            "body": "test",
+            "subject": "[Business Trip] Time for a business trip to Spain",
+            "body": "You will be going to the Spain for business trip.",
             "attatchment": "test",
-            "date": "test"
+            "date": "2020/11/12 14:01:00"
         },
         {
             "id": 10,
-            "from": "test",
-            "to": "test",
+            "from": "miyzaki@takachiho.co.jp",
+            "to": "kumamoto@aso.co.jp",
             "cc": null,
-            "subject": "test",
-            "body": "test",
+            "subject": "[Offer] Mt. Aso Trip Announcement",
+            "body": "Free ticket to Mt. Aso.",
             "attatchment": null,
-            "date": "test"
+            "date": "2020/10/04 11:17:00"
         }
     ]
 }
