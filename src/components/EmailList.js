@@ -11,7 +11,7 @@ const EmailList = ({ emails }) => {
 
     useEffect(() => {
         const onDeviceChange = () => {
-            setIsDesktop(window.innerWidth >= 760);
+            setIsDesktop(window.innerWidth >= 768);
         };
         window.addEventListener('resize', onDeviceChange);
         return () => {
@@ -52,7 +52,7 @@ const EmailList = ({ emails }) => {
             else if (date.split("/")[1] === mm) {
                 date = months[emailDate.getMonth()] + " " + emailDate.getDate();
             }
-            return (<EmailItem key={email.id} email={email} date={date} sortPreference={sortPreference} isDesktop={isDesktop}/>);
+            return (<EmailItem key={email.id} email={email} date={date} sortPreference={sortPreference} isDesktop={isDesktop} />);
         });
 
         setRenderedEmailList(renderedEmailList);
@@ -64,10 +64,10 @@ const EmailList = ({ emails }) => {
             <table className="ui fixed table">
                 <thead>
                     <tr>
-                        <th className="three wide" onClick={() => setSortPreference("from")}>From <div className={`${sortPreference === "from" ? "up-icon-visible" : "up-icon-hidden"}`}><UpIcon /> </div></th>
-                        <th className="four wide" onClick={() => setSortPreference("to")}>To <div className={`${sortPreference === "to" ? "up-icon-visible" : "up-icon-hidden"}`}><UpIcon /> </div></th>
-                        <th className="email-cell-title six wide" onClick={() => setSortPreference("subject")}>Subject <div className={`${sortPreference === "subject" ? "up-icon-visible" : "up-icon-hidden"}`}><UpIcon /> </div></th>
-                        <th className="email-cell-title three wide" onClick={() => setSortPreference("date")}>Date <div className={`${sortPreference === "date" ? "up-icon-visible" : "up-icon-hidden"}`}><UpIcon /> </div></th>
+                        <th className={`${sortPreference === "from" ? "selected-header-text three wide" : "three wide"}`} onClick={() => setSortPreference("from")}>From <div className={`${sortPreference === "from" ? "up-icon-visible" : "up-icon-hidden"}`}><UpIcon /> </div></th>
+                        <th className={`${sortPreference === "to" ? "selected-header-text four wide" : "four wide"}`} onClick={() => setSortPreference("to")}>To <div className={`${sortPreference === "to" ? "up-icon-visible" : "up-icon-hidden"}`}><UpIcon /> </div></th>
+                        <th className={`${sortPreference === "subject" ? "selected-header-text six wide" : "six wide"}`} onClick={() => setSortPreference("subject")}>Subject <div className={`${sortPreference === "subject" ? "up-icon-visible" : "up-icon-hidden"}`}><UpIcon /> </div></th>
+                        <th className={`${sortPreference === "date" ? "selected-header-text three wide" : "three wide"}`} onClick={() => setSortPreference("date")}>Date <div className={`${sortPreference === "date" ? "up-icon-visible" : "up-icon-hidden"}`}><UpIcon /> </div></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -81,10 +81,12 @@ const EmailList = ({ emails }) => {
             <table className="ui fixed table">
                 <thead>
                     <tr>
-                    <th onClick={() => setSortPreference("from")}>From <div className={`${sortPreference === "from" ? "up-icon-visible" : "up-icon-hidden"}`}><UpIcon /> </div></th>
-                        <th onClick={() => setSortPreference("to")}>To <div className={`${sortPreference === "to" ? "up-icon-visible" : "up-icon-hidden"}`}><UpIcon /> </div></th>
-                        <th onClick={() => setSortPreference("subject")}>Subject <div className={`${sortPreference === "subject" ? "up-icon-visible" : "up-icon-hidden"}`}><UpIcon /> </div></th>
-                        <th  onClick={() => setSortPreference("date")}>Date <div className={`${sortPreference === "date" ? "up-icon-visible" : "up-icon-hidden"}`}><UpIcon /> </div></th>
+                        <div className="mobile-header ui grid">
+                            <th className={`${sortPreference === "from" ? "selected-header-text" : ""}`} onClick={() => setSortPreference("from")}>From <div className={`${sortPreference === "from" ? "up-icon-visible" : "up-icon-hidden"}`}><UpIcon /> </div>|</th>
+                            <th className={`${sortPreference === "to" ? "selected-header-text" : ""}`} onClick={() => setSortPreference("to")}>To <div className={`${sortPreference === "to" ? "up-icon-visible" : "up-icon-hidden"}`}><UpIcon /> </div>|</th>
+                            <th className={`${sortPreference === "subject" ? "selected-header-text" : ""}`} onClick={() => setSortPreference("subject")}>Subject <div className={`${sortPreference === "subject" ? "up-icon-visible" : "up-icon-hidden"}`}><UpIcon /> </div>|</th>
+                            <th className={`${sortPreference === "date" ? "selected-header-text" : ""}`} onClick={() => setSortPreference("date")}>Date <div className={`${sortPreference === "date" ? "up-icon-visible" : "up-icon-hidden"}`}><UpIcon /> </div></th>
+                        </div>
                     </tr>
                 </thead>
                 <tbody>

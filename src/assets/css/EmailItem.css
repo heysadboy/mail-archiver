@@ -1,5 +1,16 @@
 .email-cell-text {
     overflow: hidden;
+    display: block;
+    font-weight: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.email-cell-text-mobile {
+    overflow: hidden;
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
@@ -9,12 +20,54 @@
     color: black;
 }
 
-.cc-label {
+.mail-icon {
+    padding-top: 5px;
+}
+
+.ui.label {
+    line-height: 0.8;
+    margin-top: 5px;
+}
+
+.cc-label, .email-date {
     float: right;
 }
 
-.email-cell-row:hover svg path,
-.email-cell-row:hover {
+.email-date-attachment {
+    float: right;
+}
+
+.email-from {
+    padding-bottom: 0px!important;
+}
+
+.email-to {
+    padding-top: 0px!important;
+}
+
+.email-info {
+    padding-right: 0px!important;
+}
+
+.email-subject-mobile {
+    padding-left: 8px;
+}
+
+.email-body {
+    font-weight: normal;
+}
+
+.email-cc-mobile {
+    padding-left: 8px;
+    font-size: 13px;
+}
+
+.ui.divider {
+    margin: 5px 10px 5px 10px;
+    padding-bottom: 0px;
+}
+
+.email-cell-row:hover svg path, .email-cell-row:hover {
     cursor: pointer;
     color: #0000d6;
     background: #fafaff;

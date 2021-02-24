@@ -1,24 +1,41 @@
-.ui.table thead th:hover svg path,
-.ui.table thead th:hover {
+.ui.table thead th {
+    color: #767676;
+    padding-right: 5px;
+}
+
+.ui.table thead th:hover svg path, .ui.table thead th:hover {
     cursor: pointer;
     fill: black;
     font-weight: bold;
     color: black;
 }
 
+.selected-header-text {
+    color: black!important;
+}
+
 .up-icon-hidden {
-    visibility: hidden;
-    margin-left: 10px;
+    margin-left: 5px;
     display: inline-block;
+    visibility: hidden;
+}
+
+.mobile-header.ui.grid {
+    margin-left: 5px;
+}
+
+.mobile-header.ui.grid {
+    margin-left: 5px;
 }
 
 .up-icon-visible {
-    margin-left: 10px;
+    margin-left: 5px;
     display: inline-block;
+    margin-right: 5px;
 }
 
 @media only screen and (max-width: 768px) {
     .ui.table thead {
-      background: #f9fafb;
+        background: #f9fafb;
     }
-  }
+}
