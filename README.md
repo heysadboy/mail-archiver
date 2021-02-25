@@ -6,6 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 You can find the online mockup here https://elegant-archimedes-989cda.netlify.app/
 
+> Please also find the [REPORT.md](REPORT.md) and [IMPROVEMENTS.md](IMPROVEMENTS.md) files for evaluation.
+
 ## Screens
 
 ### Initial Screen
@@ -21,5 +23,3 @@ You can find the online mockup here https://elegant-archimedes-989cda.netlify.ap
 | Search Results                        | Inspection Results                    |
 | ------------------------------------- | ------------------------------------- |
 | ![Initial Screen](screenshots/p4.png) | ![Initial Screen](screenshots/p5.png) |
-
-> Please also find the [REPORT.md](REPORT.md) and [IMPROVEMENTS.md](IMPROVEMENTS.md) files for evaluation.
