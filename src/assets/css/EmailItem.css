@@ -22,6 +22,11 @@
 
 .mail-icon {
     padding-top: 5px;
+    padding-left: 5px;
+}
+
+.mail-icon-mobile {
+    padding-top: 5px;
 }
 
 .ui.label {
@@ -29,8 +34,20 @@
     margin-top: 5px;
 }
 
-.cc-label, .email-date {
+.cc-label {
     float: right;
+}
+
+.email-date {
+    padding-left: 8px;
+    font-size: 13px;
+    color: #616161;
+}
+
+.email-date-expanded {
+    padding: 0px 12px 12px 12px;
+    font-size: 13px;
+    color: #616161;
 }
 
 .email-date-attachment {
@@ -41,6 +58,19 @@
     padding-bottom: 0px!important;
 }
 
+.email-cc {
+    padding: 12px 12px 0px 12px;
+}
+
+.email-subject {
+    padding: 12px;
+    font-weight: bold;
+}
+
+.email-attatchment{
+    padding: 12px;
+}
+
 .email-to {
     padding-top: 0px!important;
 }
@@ -49,22 +79,33 @@
     padding-right: 0px!important;
 }
 
+.email-info-desktop {
+    padding-left: 0px!important;
+}
+
+.email-icon-desktop {
+    padding-right: 0px!important;
+}
+
+.email-body {
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #F5F5F5;
+    
+}
+
 .email-subject-mobile {
     padding-left: 8px;
 }
 
-.email-body {
-    font-weight: normal;
+.email-body-mobile {
+    padding: 15px;
+    background-color: #F5F5F5;
 }
 
-.email-cc-mobile {
+.email-attatchment-mobile, .email-cc-mobile {
     padding-left: 8px;
     font-size: 13px;
-}
-
-.ui.divider {
-    margin: 5px 10px 5px 10px;
-    padding-bottom: 0px;
 }
 
 .email-cell-row:hover svg path, .email-cell-row:hover {
@@ -72,4 +113,8 @@
     color: #0000d6;
     background: #fafaff;
     fill: #0000d6;
+}
+
+.email-expanded-row {
+    cursor: pointer;
 }

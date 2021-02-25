@@ -1,23 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import EmailItem from './EmailItem';
 import UpIcon from '../assets/icons/UpIcon';
 import '../assets/css/EmailList.css';
+import useWindowSize from '../hooks/useWindowSize';
 
 const EmailList = ({ emails }) => {
 
     const [sortPreference, setSortPreference] = useState("date");
-    const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
     const [renderedEmailList, setRenderedEmailList] = useState(null);
-
-    useEffect(() => {
-        const onDeviceChange = () => {
-            setIsDesktop(window.innerWidth >= 768);
-        };
-        window.addEventListener('resize', onDeviceChange);
-        return () => {
-            window.removeEventListener('resize', onDeviceChange);
-        }
-    }, []);
+    const ref = useRef(null);
+    const windowSize = useWindowSize();
+    let isDesktop = (useWindowSize() >= 768);
 
     useEffect(() => {
         const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -52,18 +45,20 @@ const EmailList = ({ emails }) => {
             else if (date.split("/")[1] === mm) {
                 date = months[emailDate.getMonth()] + " " + emailDate.getDate();
             }
-            return (<EmailItem key={email.id} email={email} date={date} sortPreference={sortPreference} isDesktop={isDesktop} />);
+
+            var expandedWidth = ref.current.offsetWidth - 20;
+            return (<EmailItem key={email.id} email={email} date={date} sortPreference={sortPreference} isDesktop={isDesktop} expandedWidth={expandedWidth} />);
         });
 
         setRenderedEmailList(renderedEmailList);
-    }, [emails, isDesktop, sortPreference]);
+    }, [emails, windowSize, isDesktop, sortPreference]);
 
 
     if (isDesktop) {
         return (
             <table className="ui fixed table">
                 <thead>
-                    <tr>
+                    <tr ref={ref}>
                         <th className={`${sortPreference === "from" ? "selected-header-text three wide" : "three wide"}`} onClick={() => setSortPreference("from")}>From <div className={`${sortPreference === "from" ? "up-icon-visible" : "up-icon-hidden"}`}><UpIcon /> </div></th>
                         <th className={`${sortPreference === "to" ? "selected-header-text four wide" : "four wide"}`} onClick={() => setSortPreference("to")}>To <div className={`${sortPreference === "to" ? "up-icon-visible" : "up-icon-hidden"}`}><UpIcon /> </div></th>
                         <th className={`${sortPreference === "subject" ? "selected-header-text six wide" : "six wide"}`} onClick={() => setSortPreference("subject")}>Subject <div className={`${sortPreference === "subject" ? "up-icon-visible" : "up-icon-hidden"}`}><UpIcon /> </div></th>
@@ -80,7 +75,7 @@ const EmailList = ({ emails }) => {
         return (
             <table className="ui fixed table">
                 <thead>
-                    <tr>
+                    <tr ref={ref}>
                         <div className="mobile-header ui grid">
                             <th className={`${sortPreference === "from" ? "selected-header-text" : ""}`} onClick={() => setSortPreference("from")}>From <div className={`${sortPreference === "from" ? "up-icon-visible" : "up-icon-hidden"}`}><UpIcon /> </div>|</th>
                             <th className={`${sortPreference === "to" ? "selected-header-text" : ""}`} onClick={() => setSortPreference("to")}>To <div className={`${sortPreference === "to" ? "up-icon-visible" : "up-icon-hidden"}`}><UpIcon /> </div>|</th>
